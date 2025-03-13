@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-image: url('../img/mountains.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.wrapper {
+    border: 2px solid #ffffff;
+    background-color: #1b1b1b;
+    box-shadow: 0 0 40px 10px #1b1b1b;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.card {
+
+    display: flex;
+    grid-gap: 24px;
+}
+
+.card-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-avatar-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.card-avatar-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 20px;
+    animation: pulsar 3s linear infinite;
+}
+
+.card-info {}
+
+.card-info-wrapper {}
+
+.card-info-specialization {
+    font-style: italic;
+}
+
+.card-info-name {}
+
+.card-info-about_us {}
+
+.card-info-link {
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    display: block;
+    padding: 8px 12px;
+    width: max-content;
+    transition: all 0.3s linear;
+}
+
+.card-info-link:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+    color: #1b1b1b;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 24px;
+}
+
+.social-link {
+    text-decoration: none;
+    box-shadow: 0 0 5px 0 #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulsar 3s linear infinite;
+}
+
+
+body.light {
+    color: #1b1b1b;
+}
+
+body.light .wrapper {
+    border-color: #ffffff;
+    background-color: #ffffff;
+}
+
+body.light .card-info-link {
+    color: #1b1b1b;
+    border-color: #1b1b1b;
+}
+
+body.light .card-avatar-img {
+    animation: pulsarLight 3s linear infinite;
+}
+
+body.light .card-info-link:hover {
+    background-color: #1b1b1b;
+    color: #ffffff;
+}
+
+body.light .social-link {
+    box-shadow: 0 0 5px 0 #1b1b1b;
+    animation: pulsarLight 3s linear infinite;
+}
+
+@keyframes pulsar {
+    0% {
+        box-shadow: 0 0 5px 2px #ffffff;
+    }
+
+    25% {
+        box-shadow: 0 0 10px 2px #ffffff;
+    }
+
+    50% {
+        box-shadow: 0 0 5px 2px #ffffff;
+    }
+
+    75% {
+        box-shadow: 0 0 10px 2px #ffffff;
+    }
+
+    100% {
+        box-shadow: 0 0 5px 2px #ffffff;
+    }
+}
+
+@keyframes pulsarLight {
+    0% {
+        box-shadow: 0 0 5px 2px #1b1b1b;
+    }
+
+    25% {
+        box-shadow: 0 0 10px 2px #1b1b1b;
+    }
+
+    50% {
+        box-shadow: 0 0 5px 2px #1b1b1b;
+    }
+
+    75% {
+        box-shadow: 0 0 10px 2px #1b1b1b;
+    }
+
+    100% {
+        box-shadow: 0 0 5px 2px #1b1b1b;
+    }
+}
