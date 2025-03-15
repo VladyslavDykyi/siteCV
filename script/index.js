@@ -3,17 +3,17 @@ const iconObj = {
     light: './img/favicon-light.ico',
 };
 
-const btn = document.querySelector('#teme-swiper');
+const btn = document.querySelector('#theme-swiper');
 const body = document.querySelector('body');
 const favicon = document.querySelector('[rel="shortcut icon"]');
 
-function swapTeme() {
+function swapTheme() {
     body.classList.toggle('light');
-    if (body.classList.contains('dark')) {
+    if (!body.classList.contains('light')) {
         favicon.setAttribute('href', iconObj.dark)
     } else {
         favicon.setAttribute('href', iconObj.light)
     }
 }
 
-btn.addEventListener('click', swapTeme);
+btn.addEventListener('click', swapTheme);

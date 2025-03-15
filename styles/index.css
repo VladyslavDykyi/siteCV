@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
+    color: #eaeaea;
     background-image: url('../img/mountains.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +21,7 @@ body {
 }
 
 .wrapper {
-    border: 2px solid #ffffff;
+    border: 2px solid #eaeaea;
     background-color: #1b1b1b;
     box-shadow: 0 0 40px 10px #1b1b1b;
     border-radius: 12px;
@@ -64,6 +64,7 @@ body {
 
 .card-info-specialization {
     font-style: italic;
+    text-align: center;
 }
 
 .card-info-name {}
@@ -71,20 +72,14 @@ body {
 .card-info-about_us {}
 
 .card-info-link {
-    color: #ffffff;
+    color: #eaeaea;
     text-decoration: none;
     border-radius: 20px;
-    border: 1px solid #ffffff;
-    display: block;
-    padding: 8px 12px;
-    width: max-content;
-    transition: all 0.3s linear;
-}
-
-.card-info-link:hover {
-    background-color: #ffffff;
-    transform: scale(1.05);
-    color: #1b1b1b;
+    background-color: #231e1b;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .social {
@@ -96,27 +91,25 @@ body {
 
 .social-link {
     text-decoration: none;
-    box-shadow: 0 0 5px 0 #ffffff;
+    box-shadow: 0 0 5px 0 #eaeaea;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s linear;
     animation: pulsar 3s linear infinite;
 }
-
+.social-link:hover {
+    transform: scale(1.1);
+}
 
 body.light {
     color: #1b1b1b;
 }
 
 body.light .wrapper {
-    border-color: #ffffff;
-    background-color: #ffffff;
-}
-
-body.light .card-info-link {
-    color: #1b1b1b;
-    border-color: #1b1b1b;
+    border-color: #eaeaea;
+    background-color: #eaeaea;
 }
 
 body.light .card-avatar-img {
@@ -125,7 +118,7 @@ body.light .card-avatar-img {
 
 body.light .card-info-link:hover {
     background-color: #1b1b1b;
-    color: #ffffff;
+    color: #eaeaea;
 }
 
 body.light .social-link {
@@ -135,23 +128,23 @@ body.light .social-link {
 
 @keyframes pulsar {
     0% {
-        box-shadow: 0 0 5px 2px #ffffff;
+        box-shadow: 0 0 5px 2px #eaeaea;
     }
 
     25% {
-        box-shadow: 0 0 10px 2px #ffffff;
+        box-shadow: 0 0 10px 2px #eaeaea;
     }
 
     50% {
-        box-shadow: 0 0 5px 2px #ffffff;
+        box-shadow: 0 0 5px 2px #eaeaea;
     }
 
     75% {
-        box-shadow: 0 0 10px 2px #ffffff;
+        box-shadow: 0 0 10px 2px #eaeaea;
     }
 
     100% {
-        box-shadow: 0 0 5px 2px #ffffff;
+        box-shadow: 0 0 5px 2px #eaeaea;
     }
 }
 
